@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Inicio from "./pages/inicio";
 import Listagem from "./pages/Listagem";
-import Basic from "./pages/Login";
+import Informacao from "./pages/Informacao";
+
 
 const App = () => {
   const [color] = useState("#eb8d04");
@@ -14,7 +15,7 @@ const App = () => {
       <Route path="/" element={<Home />} />
       <Route path="/inicio" element={<Inicio />} />
       <Route path="/listagem" element={<Listagem />} />
-      <Route path="/Login" element={<Basic />} />
+      <Route path="/informacao/:id" element={<Informacao />} />
     </Routes>
   );
 };
